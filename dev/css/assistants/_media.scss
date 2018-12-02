@@ -47,6 +47,8 @@
         margin-left: 0;
     }
     .site-nav_list {
+        top: 100%;
+        left: 30px;
         width: 35%;
         margin-top: 5px;
         visibility: hidden;
@@ -311,7 +313,9 @@
     }
 
     /* Header */
-
+    .site-nav_list {
+        left: 20px;
+    }
     .header-title { 
         margin-bottom: 40px;
         h1 {
