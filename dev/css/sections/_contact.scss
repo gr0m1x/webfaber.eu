@@ -1,0 +1,104 @@
+/*START technologies*/
+.section-contact {
+    background-color: #222222;
+    padding-top: 190px;
+    padding-bottom: 200px;
+    color: #ffffff;
+    .container {
+        flex-direction: column;
+    }
+}
+  
+.contact-title {
+    h2 {
+        font-size: 56px;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+    }
+}
+
+.contact_content h4 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.contact_content {
+    display: flex;
+    
+}
+.contact_list {
+    margin-right: 250px;
+}
+.contact-info_row {
+    margin-bottom: 35px;
+    display: table;
+    font-size: 20px;
+    &::before {
+        font-weight: bold;
+        text-transform: uppercase;
+        display: table-cell;
+        width: 100px;
+        padding: 0 10px 0 0;
+        content: attr(title) ":";
+    }
+}
+
+.phone_number {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact_form_container {
+    width: 33%;
+}
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+
+    .contact-input_name,.contact-input_email,
+    .contact-input_phone,.contact-textarea_massage  {
+        
+        padding: 10px 0 20px 0;
+        margin-bottom: 35px;
+        border: none;
+        border-bottom: 2px solid #949494;
+        background-color: transparent;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        text-overflow: ellipsis;
+        font-size: 20px;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        -webkit-text-fill-color: #fff !important;
+    }
+    .contact-textarea_massage  {
+        resize: none;
+        margin-bottom: 70px;
+        height: 100px;
+    }
+}
+
+.contact-input_name::placeholder,.contact-input_email::placeholder,
+.contact-input_phone::placeholder,.contact-textarea_massage::placeholder {
+  text-transform: uppercase;
+  color: #949494;
+}
+
+.contact_button {
+    align-self: flex-end;
+    padding: 0;
+    width: 225px;
+    height: 50px;
+    background-color: #222222;
+    border: 2px solid #949494;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+  /*END technologies*/

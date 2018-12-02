@@ -1,0 +1,111 @@
+.project-slider .slick-dots li button:before {
+    font-size: 16px;
+    opacity: 0.25;   
+}
+
+.project-slider .slick-dots li button:hover:before {
+    opacity: 0.5;
+    color: #fff;
+}
+.project-slider .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #fff;
+}
+
+.project-slider .slick-dots {
+    bottom: -80px;
+    right: 30%;
+}
+
+.project-slider.slick-dotted.slick-slider {
+    margin-bottom: 80px;
+}
+
+.project-slider .slick-next:before, .project-slider .slick-prev:before {
+    content: "";
+    position: absolute;
+    top: 26%;
+    transform:  rotate(45deg);
+    font-size: 0;
+    opacity: 1;
+    border-color: #e08181;
+    border-style: solid;
+    padding: 9px;
+    transition: 0.2s;
+}
+.project-slider {
+    .slick-next:before {
+        border-width: 3px 3px 0 0;
+        left: 15%; 
+    }
+    .slick-prev:before {
+        border-width: 0 0 3px 3px;
+        right: 15%;
+    }
+}
+
+.project-slider .slick-prev {
+    top: 95%;
+    left: -58%;
+}
+
+.project-slider .slick-next {
+    top: 95%;
+    left: -50%;
+}
+
+.project-slider .slick-next, .project-slider .slick-prev {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e08181;
+    transition: 0.2s;
+    &:active {
+        border-color: #fff;
+    }
+
+    &:active.slick-next:before, &:active.slick-prev:before {
+        border-color: #fff;
+    }
+}
+
+.hamburger {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    padding: 0;
+}
+
+.hamburger {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #737373;
+   
+}
+.hamburger-box {
+    position: initial;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.hamburger-inner, 
+.hamburger-inner:after, 
+.hamburger-inner:before {
+    border-radius: 0;
+    background-color: #737373;
+    width: 24px;
+    height: 3px;
+}
+
+.hamburger.is-active .hamburger-inner, 
+.hamburger.is-active .hamburger-inner:after, 
+.hamburger.is-active .hamburger-inner:before {
+    background-color: #737373;
+    border-radius: 0;
+}
+.hamburger-inner:before {
+    top: -7px;
+}
+
+.hamburger-inner:after {
+    bottom: -7px;
+}

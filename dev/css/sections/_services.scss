@@ -1,0 +1,82 @@
+/*START SERVICES*/
+.section-services {
+    background-color: #c10303;
+    padding-top: 190px;
+    padding-bottom: 130px;
+    color: #fff;
+}
+
+.services_title {
+    flex: 28%;
+    h2 {
+        font-size: 56px;
+        font-weight: bold;
+        margin-bottom: 55px;
+        padding-right: 65px;
+    }
+
+    p {
+        position: relative;
+        padding-top: 45px;
+        font-size: 20px;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background-color: #fff;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+.services-column {
+    flex: 36%;
+    padding: 0 15px;
+}
+.services_item {
+    padding-left: 55px;
+    padding-right: 55px;
+    &:not(:last-child) {
+        margin-bottom:80px;
+    }
+    .services_item_title{
+        margin-bottom: 35px;
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    h4 {
+        margin-bottom: 15px;
+        line-height: 1.15;
+    }
+    p {
+        margin-top: 30px;
+        line-height: 1.8;
+    }
+}
+
+.services_item_title {
+    display: flex;
+    align-items: center;
+    h3{
+        padding:10px 0 10px 75px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+    .web-desing {
+        background-image: url('../img/wab-desing-logo.png');
+    }
+    .consultancy {
+        background-image: url('../img/idea-logo.png');
+    }
+    .merketing {
+        background-image: url('../img/marketing-logo.png');
+    }
+    .support {
+        background-image: url('../img//support-logo.png');
+    }
+}
+/*END SERVICES*/

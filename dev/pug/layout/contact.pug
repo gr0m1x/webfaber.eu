@@ -1,0 +1,31 @@
+// Start Contact code
+section.section-contact#contact
+  div.container
+    div.contact-title
+      h2
+        | Contact
+    
+    div.contact_content
+      div.contact_list
+        h4
+          | We are always there to help you 
+        .contact-info_row.contact-email(title='Email')
+          | info@webfaber.eu
+        .contact-info_row.contact-skype(title='Skype')
+          | info@webfaber.eu 
+        .contact-info_row.contact-phone(title='Phone')
+          div.phone_number +31 6 22 88 63 11 
+          div.phone_operators (Whatsapp/Viber/Telegram)
+
+      div.contact_form_container
+        form.contact_form(action="")
+          h4
+            | Leave us a message
+          input.contact-input_name(type="text", name="name", placeholder="name")
+          input.contact-input_email(type="email", name="email", placeholder="email")
+          input.contact-input_phone(type="tel", name="phone", placeholder="phone")
+          textarea.contact-textarea_massage(name="message", placeholder="message")
+          button.contact_button
+            | Send
+
+// End Contact code

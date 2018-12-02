@@ -1,0 +1,54 @@
+/*START ABOUT_US*/
+.section-about-us {
+    background-color: #222222;
+    padding-top: 180px;
+    padding-bottom: 120px;
+    color: #fff;
+    .container {
+        align-items: flex-start;
+    }
+}
+
+.about-us_content {
+    h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        position: relative;
+        display: inline-block;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background-color: #c10303;
+        }
+    }
+    p {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+.who-are-we_column {
+    width: 65%;
+    margin-right: 50px;
+}
+.goals-and-working_column {
+    width: 35%;
+    margin-left: 50px;
+    .goals_container {
+        margin-bottom: 60px;
+    }
+}
+.spolier_button {
+    display: none;
+}
+
+
+
+/*END ABOUT_US*/
