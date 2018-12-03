@@ -469,7 +469,7 @@
     outline: none;
     overflow: hidden;
 }
-.spolier_text:focus, 
+.spolier_text:focus,
 .spolier_button:focus ~ .spolier_text {
     height: auto;
 }
@@ -493,8 +493,10 @@
     position: absolute;
   
 }
+
 .spolier_button:focus {
     opacity: 0;
+    left: -100%;
 }
      /*Spoiler end*/
 }
