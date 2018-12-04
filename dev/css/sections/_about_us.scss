@@ -36,45 +36,6 @@
   }
 }
 
-/*
-.about-us_content {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1auto 1auto;
-  grid-template-areas: "who-are-we_column goals_column",
-  "who-are-we_column working_column" ;
-}
-
-.who-are-we_column {
-  grid-area: who-are-we_column;
-  margin-right: 140px;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  
-}
-
-.goals_column_column { 
-  grid-area: goals_column;
-  margin-bottom: 70px;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  
-}
-
-.working_column {
-  grid-area: working_column;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1; 
-  
-}*/
-
 
 .about-us_content {
   display: -ms-grid;
