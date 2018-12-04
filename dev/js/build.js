@@ -1,6 +1,15 @@
 $(document).ready(function(){
   $('.project-slider').slick({
     dots: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+        }
+      }
+    
+    ]
   })
 
   // Slow scroll
@@ -33,15 +42,15 @@ $(document).ready(function(){
   var siteHeader = $('.site-header')
   var headerOffsetTop = $('.site-nav_cont').offset().top;
   
-  $(window).on('scroll', function(){
-    if (window.scrollY > headerOffsetTop) {
+  $(window).scroll( function(){
+
+    if (window.pageYOffset > headerOffsetTop) {
       siteHeader.addClass('navigation-fixed');
     } else {
       siteHeader.removeClass('navigation-fixed');
     }
   })
 
- 
 
 });
 

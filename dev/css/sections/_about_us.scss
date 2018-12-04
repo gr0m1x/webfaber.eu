@@ -1,54 +1,115 @@
 /*START ABOUT_US*/
 .section-about-us {
-    background-color: #222222;
-    padding-top: 180px;
-    padding-bottom: 120px;
-    color: #fff;
-    .container {
-        align-items: flex-start;
-    }
+  background-color: #222222;
+  padding-top: 180px;
+  padding-bottom: 120px;
+  color: #fff;
+}
+
+.spolier_button {
+  display: none;
 }
 
 .about-us_content {
-    h3 {
-        font-size: 30px;
-        margin-bottom: 20px;
-        padding-bottom: 15px;
-        position: relative;
-        display: inline-block;
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 2px;
-            width: 100%;
-            background-color: #c10303;
-        }
+  h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #c10303;
     }
-    p {
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
+  }
+  p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    &:not(:last-child) {
+        margin-bottom: 30px;
     }
+  }
 }
+
+/*
+.about-us_content {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1auto 1auto;
+  grid-template-areas: "who-are-we_column goals_column",
+  "who-are-we_column working_column" ;
+}
+
 .who-are-we_column {
-    width: 65%;
-    margin-right: 50px;
-}
-.goals-and-working_column {
-    width: 35%;
-    margin-left: 50px;
-    .goals_container {
-        margin-bottom: 60px;
-    }
-}
-.spolier_button {
-    display: none;
+  grid-area: who-are-we_column;
+  margin-right: 140px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  
 }
 
+.goals_column_column { 
+  grid-area: goals_column;
+  margin-bottom: 70px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  
+}
+
+.working_column {
+  grid-area: working_column;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1; 
+  
+}*/
 
 
+.about-us_content {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "who-are-we_column goals_column"
+   "who-are-we_column working_column";
+}
+
+.who-are-we_column { 
+ 
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: who-are-we_column;
+  margin-right: 140px;
+}
+
+.goals_column { 
+  
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: goals_column;
+  margin-bottom: 70px;
+}
+
+.working_column {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: working_column;
+ 
+}
 /*END ABOUT_US*/

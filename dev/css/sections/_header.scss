@@ -34,7 +34,6 @@
 }
 
 .site-logo.site-nav_cont {
-    transition: 0.3s;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -80,29 +79,32 @@
 
 
 .lang-selection {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #737373;
+    display: inline-block;
     font-size: 20px;
-    padding: 10px;
-    width: 50px;
-    height: 50px;
     border: 2px solid #737373;
     text-transform: uppercase;
     font-weight: 600;
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #737373;
+        width: 46px;
+        height: 46px;
+    }
 }
 
 .header-content {
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
 .header-title {
-
     max-width: 1000px;
-    margin:0 auto 70px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
     
     h1 {
         font-size: 72px;
@@ -135,17 +137,18 @@ span {
 }
 
 
-.arrow_cont {
-    
+.arrow_cont {   
     img {
         width: auto;
         height: 100%;
     }
 }
+
 .header-contacts {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .header-contacts_cont {    

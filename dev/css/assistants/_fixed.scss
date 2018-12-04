@@ -45,12 +45,12 @@
 }
 
 .project-slider .slick-prev {
-    top: 95%;
+    top: 94%;
     left: -58%;
 }
 
 .project-slider .slick-next {
-    top: 95%;
+    top: 94%;
     left: -50%;
 }
 
@@ -69,24 +69,26 @@
 }
 
 .hamburger {
+   
     position: absolute;
     visibility: hidden;
     opacity: 0;
     padding: 0;
-}
-
-.hamburger {
-    width: 50px;
-    height: 50px;
+    left: -100%;
     border: 2px solid #737373;
    
 }
+
 .hamburger-box {
-    position: initial;
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
     align-items: center;
+    width: 46px;
+    height: 46px;
 }
+.hamburger-inner {
+    left: 11px;
+}
+
 .hamburger-inner, 
 .hamburger-inner:after, 
 .hamburger-inner:before {
@@ -103,9 +105,11 @@
     border-radius: 0;
 }
 .hamburger-inner:before {
+    left: 0;
     top: -7px;
 }
 
 .hamburger-inner:after {
+    left: 0;
     bottom: -7px;
 }

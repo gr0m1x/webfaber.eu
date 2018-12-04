@@ -29,7 +29,9 @@
             
         }
     }
-    
+    .header-title {
+        width: 100%;
+    }
     .site-logo {
         img {
             width: auto;
@@ -43,6 +45,7 @@
         display: none;
     }
     .site-nav {
+        display: flex;
         order: -2;
         margin-left: 0;
     }
@@ -80,8 +83,9 @@
         position: relative;
         visibility: visible;
         opacity: 1;
+        left: 0;
     }
-    /*services*/
+    /*services */
     .section-services  {
         padding: 100px 0;
         .container{
@@ -89,17 +93,22 @@
         }
     }
     .services_title {
-
+        width: 100%;
         margin-bottom: 50px;
     }
     .services-column {
+        width: 100%;
         padding: 0;
     }
     .services_item {
         padding: 0;
         margin-bottom: 80px;
     }
-    /*PROJECTS*/
+    /* About us */
+    .who-are-we_column {
+        margin-right: 100px;
+    }
+    /* PROJECTS */
     
     .project-slider .slick-next {
         left: -46%;
@@ -111,7 +120,7 @@
         margin-right: 100px;
     }
     .contact_form_container {
-        width: 100%;
+        width: 50%;
     }
 }
 
@@ -123,13 +132,14 @@
         max-width: 720px;
     }
 
-        /*PROJECTS*/
+     /*PROJECTS*/
     .section-projects {
         padding-top: 100px;
         padding-bottom: 80px;
     }
 
     .projects_item {
+        width: 100%;
         margin-right: 0;
     }
     .project-slider{
@@ -139,11 +149,6 @@
     .project-slider .slick-dots {
         bottom: -40px;
         right: 0;
-    }
-    .project-slider .slick-next, 
-    .project-slider .slick-prev {
-        opacity: 0;
-        visibility: hidden;
     }
 
     .projects_item {
@@ -155,32 +160,20 @@
         flex-direction: column;
     }
     /* about us */
+    
     .section-about-us {
-        padding: 100px 0;
-        .container {
-            flex-direction: column;
-            
-        }
+        padding: 100px 0; 
     }
-    .goals-and-working_column  {
-        .goals_container {
-            margin-bottom: 0;
-        }   
+
+    .about-us_content {
+        display: block;
     }
 
     .who-are-we_column {
-        width: 100%;
-        margin-right: 0;             
-        margin-bottom: 70px;
+        margin-bottom: 60px;
+        margin-right: 0;
     }
-    .goals-and-working_column {
-        margin-left: 0;
-        display: flex;
-        width: 100%;
-        .goals_container{
-            margin-right: 40px;
-        }
-    }
+    
     /*Technologies*/
 
     .section-technologies {
@@ -213,6 +206,7 @@
     .navigation-fixed {
         padding-top: 191px;
     }
+   
     .site-logo.site-nav_cont {
         margin-bottom: 120px;
     }
@@ -299,6 +293,9 @@
         padding: 0;
         
     }
+    .contact_form_container {
+        width: 100%;
+    }
     .contact_list {
         display: none;
     }
@@ -342,16 +339,7 @@
         padding-bottom: 15px;
     }
     /* About us */
-    .goals-and-working_column {
-        flex-direction: column;
-    }
-    .goals-and-working_column  {
-        .goals_container {
-            margin-bottom: 70px;
-            margin-right: 0;
-        }
-    }
-
+    
     .about-us_content  {
         h3 {
             font-size: 20px;
@@ -406,16 +394,21 @@
 {
     /* Header*/
     .lang-selection {
-        width: 45px;
-        height: 45px;
+        span {
+            width: 41px;
+            height: 41px;
+        }
+      
     }
     .site-nav_list {
         width: 75%;
     }
-    .hamburger {
-        width: 45px;
-        height: 45px;
-       
+    .hamburger-box {
+        width: 41px;
+        height: 41px;
+    }
+    .hamburger-inner {
+        left: 9px;
     }
     
     
@@ -515,4 +508,3 @@
     }
     
 }
-
