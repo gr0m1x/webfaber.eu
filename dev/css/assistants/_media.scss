@@ -501,7 +501,9 @@
     .services_title,
     .services_item {
         padding: 0 10px;
-        margin: 10px;
+    }
+    .services_item_title h3 {
+        padding-left: 70px;
     }
 
     .tabccontainer-img {
@@ -519,7 +521,10 @@
     .working_column {
         margin-bottom: 40px;
     }
-    
+
+    .merketing_grid {
+        margin-bottom: 0;
+    }
 
         /* Spoiler start */
     .spolier_text {

@@ -61,7 +61,16 @@
         background-repeat: no-repeat;
         background-position: 0 0;
     }
+
+    .web-desing,
+    .consultancy,
+    .merketing,
+    .support {
+        background-position-y: center;
+    }
+    
     .web-desing {
+        
         background-image: url('../img/wab-desing-logo.png');
     }
     .consultancy {
