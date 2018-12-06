@@ -50,15 +50,15 @@
         margin-left: 0;
     }
     .site-nav_list {
+        display: block;
         top: 100%;
-        z-index: 10;
-        overflow-y: scroll;
-        min-height: calc(100vh - 75px);
-        box-sizing: border-box;
         left: -1000px;
-        width: 30%;
+        z-index: 10;
+        overflow-y: auto;
+        height: calc(100vh - 80px);
+        box-sizing: border-box;
+        min-width: 30%;
         position: absolute;
-        flex-direction: column;
         background-color: #1b1b1b;
         border: 2px solid #737373;
         
@@ -66,9 +66,6 @@
             margin: 0;
             padding:10px 10px 10px 30px;
             width: 100%;
-            /*&:not(:last-child) {
-                border-bottom: #737373 2px solid;
-            }*/
         }
     }
 
@@ -241,9 +238,7 @@
     .site-logo.site-nav_cont {
         margin-bottom: 120px;
     }
-    .site-nav_list {
-        width: 45%;
-    }
+    
     .header-title { 
         h1 {
             font-size: 52px;
@@ -429,8 +424,10 @@
         }
       
     }
+   
     .site-nav_list {
-        width: 75%;
+        height: calc(100vh - 75px);
+        min-width: 70%;
     }
     .hamburger-box {
         width: 41px;
@@ -501,9 +498,12 @@
     .services_title,
     .services_item {
         padding: 0 10px;
-        margin: 10px;
+    }
+    .services_item_title h3 {
+        padding-left: 70px;
     }
 
+    
     .tabccontainer-img {
         img {
             width: 100%;
@@ -519,7 +519,10 @@
     .working_column {
         margin-bottom: 40px;
     }
-    
+
+    .merketing_grid {
+        margin-bottom: 0;
+    }
 
         /* Spoiler start */
     .spolier_text {
