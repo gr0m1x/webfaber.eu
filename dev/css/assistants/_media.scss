@@ -51,8 +51,9 @@
     }
     .site-nav_list {
         top: 100%;
+        z-index: 10;
         overflow-y: scroll;
-        min-height: calc(100vh - 80px);
+        min-height: calc(100vh - 75px);
         box-sizing: border-box;
         left: -1000px;
         width: 30%;
@@ -76,6 +77,7 @@
         position: relative;
         img {
             margin: 0;
+            width: auto;
         }
         &::after {
             content:'Home';
@@ -339,9 +341,7 @@
     }
 
     /* Header */
-    .site-nav_list {
-        left: 20px;
-    }
+   
     .header-title { 
         margin-bottom: 40px;
         h1 {
@@ -352,14 +352,17 @@
             font-size: 16px;
         }
     }
+    
     .site-logo {
         img {
             width: 100%;
         }
         
     }
+
     .home_button {
-        img{
+        img {
+           
             width: auto;
         }
     }
