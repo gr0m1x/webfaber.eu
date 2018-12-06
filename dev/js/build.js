@@ -1,18 +1,45 @@
 $(document).ready(function(){
+  // Project slider
   $('.project-slider').slick({
     dots: true,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 992,
         settings: {
           arrows: false,
         }
-      }
-    
-    ]
+    }]
   })
 
+// About us and Services Slider
+  $('.block_slider').slick({
+        arrows: false,
+        dots: true,
+        responsive: [{
+          breakpoint: 9999,
+          settings: 'unslick',
+      }, {
+        breakpoint: 380,
+        settings: 'slick',  
+      }
+    ]
+      });
+
+  // About us Spoiler
+
+  var AboutUsSpoiler = $('.about-us_column');
+  var AboutUsSpoilerHeight = AboutUsSpoiler.height();
+
+  function AboutUsSpoilerBtn() {
+    if (AboutUsSpoilerHeight >= '359') {
+      AboutUsSpoiler.addClass('spolier_block');
+    } else {
+      AboutUsSpoiler.removeClass('spolier_block');
+    }
+  }
+  AboutUsSpoilerBtn();
+
   // Slow scroll
+
   $("#site-nav").on("click","a", function (event) {
 
     event.preventDefault();
@@ -54,6 +81,8 @@ $(document).ready(function(){
 
 });
 
+
+
 function openCity(evt, cityName) {
   
   // Declare all variables
@@ -75,6 +104,11 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+
+
+
+
 
 
 //   var technologiesSlider = document.querySelector('.tabccontainer');

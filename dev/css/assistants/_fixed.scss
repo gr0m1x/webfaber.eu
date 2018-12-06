@@ -1,17 +1,30 @@
+.block_slider .slick-dots li button:before,
 .project-slider .slick-dots li button:before {
     font-size: 16px;
     opacity: 0.25;   
 }
 
+.block_slider .slick-dots li button:hover:before,
 .project-slider .slick-dots li button:hover:before {
     opacity: 0.5;
     color: #fff;
 }
+
+.block_slider .slick-dots li.slick-active button:before,
 .project-slider .slick-dots li.slick-active button:before {
     opacity: 1;
     color: #fff;
 }
 
+.about-us_content.slick-dotted.slick-slider {
+    margin-bottom: 0;
+    
+}
+.about-us_content {
+    .slick-dots {
+        bottom: 0;
+    }
+}
 .project-slider .slick-dots {
     bottom: -80px;
     right: 30%;

@@ -48,14 +48,14 @@
 
 .site-nav_list {
     display: inline-flex;
-    transition: 0.3s;
+    transition: 0.5s;
+   
     li {
         font-size: 20px;
         display: flex;
         align-items: center;
         color: #737373;
         margin-right: 50px;
-       
         a {
             color: #737373;
             text-transform: uppercase;
@@ -65,18 +65,20 @@
             }
         }
     }    
+   
+
+    &.site-nav_list__visible {
+        left:0;
+    }
+}
+
+.home_button {
     img {
         width: 20px;
         height: 20px;
         margin-bottom: 4px;
     }
-
-    &.site-nav_list__visible {
-        visibility: visible;
-        opacity: 1;
-    }
 }
-
 
 .lang-selection {
     display: inline-block;

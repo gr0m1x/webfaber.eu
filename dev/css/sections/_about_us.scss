@@ -12,6 +12,7 @@
 
 .about-us_content {
   h3 {
+    font-weight: bold;
     font-size: 30px;
     margin-bottom: 20px;
     padding-bottom: 15px;
@@ -40,6 +41,7 @@
 .about-us_content {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 2fr 1fr;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "who-are-we_column goals_column"
    "who-are-we_column working_column";
