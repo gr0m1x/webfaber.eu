@@ -66,17 +66,17 @@ $(document).ready(function(){
   }
 
   // site nav
-  var siteHeader = $('.site-header')
-  var headerOffsetTop = $('.site-nav_cont').offset().top;
+  // var siteHeader = $('.site-header')
+  // var headerOffsetTop = $('.site-nav_cont').offset().top;
   
-  $(window).scroll( function(){
+  // $(window).scroll( function(){
 
-    if (window.pageYOffset > headerOffsetTop) {
-      siteHeader.addClass('navigation-fixed');
-    } else {
-      siteHeader.removeClass('navigation-fixed');
-    }
-  })
+  //   if (window.pageYOffset > headerOffsetTop) {
+  //     siteHeader.addClass('navigation-fixed');
+  //   } else {
+  //     siteHeader.removeClass('navigation-fixed');
+  //   }
+  // })
 
 
 });
